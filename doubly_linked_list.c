@@ -182,7 +182,7 @@ void deletion_beginning()
     {
         head = NULL;
         free(head);
-        printf("\nnode deleted\n");
+        printf("\nNode deleted\n");
     }
     else
     {
@@ -190,7 +190,7 @@ void deletion_beginning()
         head = head -> next;
         head -> prev = NULL;
         free(ptr);
-        printf("\nnode deleted\n");
+        printf("\nNode deleted\n");
     }
 
 }
@@ -205,7 +205,7 @@ void deletion_last()
     {
         head = NULL;
         free(head);
-        printf("\nnode deleted\n");
+        printf("\nNode deleted\n");
     }
     else
     {
@@ -216,7 +216,7 @@ void deletion_last()
         }
         ptr -> prev -> next = NULL;
         free(ptr);
-        printf("\nnode deleted\n");
+        printf("\nNode deleted\n");
     }
 }
 void deletion_specified()
@@ -242,7 +242,7 @@ void deletion_specified()
         ptr -> next = temp -> next;
         temp -> next -> prev = ptr;
         free(temp);
-        printf("\nnode deleted\n");
+        printf("\nNode deleted\n");
     }
 }
 void display()
@@ -273,7 +273,7 @@ void search()
         {
             if(ptr->data == item)
             {
-                printf("\nitem found at location %d ",i+1);
+                printf("\nItem found at location %d ",i+1);
                 flag=0;
                 break;
             }
